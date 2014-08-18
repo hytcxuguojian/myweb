@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>淘宝已买到的宝贝</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="淘宝,taobao" />
+	<meta name="description" content="淘宝，已买到的宝贝页面" />
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-2.0.3.js"></script> 
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<!-- 页眉 -->
+	<div id="topnav">
+		<div id="topNavInner">
+			<ul id="topNavLeft">
+				<li id="loginInfo" class="menu">
+					<div class="menuhd">
+						<a href="" class="h">亲，请登录</a>
+						<a href="">免费注册</a>
+					</div>
+				</li>
+				<li>
+					<div class="menuhd">
+						<a href="">手机逛淘宝</a>
+					</div>
+				</li>
+			</ul>
+			<ul id="topNavRight">
+				<li class="menu">
+					<div class="menuhd">
+						<a href="" class="h">淘宝网首页</a>
+					</div>
+				</li>
+				<li class="menu">
+					<div class="menuhd">
+						<a href="">我的淘宝</a>
+					</div>
+				</li>
+				<li class="menu">
+					<div class="menuhd">
+						<a href="">购物车
+							<strong id="J_MiniCartNum" class="h">0</strong>
+						</a>
+					</div>
+				</li>
+				<li class="menu">
+					<div class="menuhd">
+						<a href="">收藏夹</a>
+					</div>
+				</li>
+				<li class="menu">
+					<div class="menuhd">
+						<a href="">商品分类</a>
+					</div>
+				</li>
+				<li class="site-nav-pipe">|</li>
+				<li class="menu">
+					<div class="menuhd">
+						<a href="">卖家中心</a>
+					</div>
+				</li>
+				<li class="menu">
+					<div class="menuhd">
+						<a href="">联系客服</a>
+					</div>
+				</li>
+				<li class="menu">
+					<div class="menuhd">
+						<a href="">网站导航</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<header class="mtHeader">
+		<article>
+			<div class="mtLogo">
+				<a href="" title="我的淘宝" class="mtlogoPic"></a>
+			</div>
+			<nav class="mt-nav clearfixed">
+				<ul id="mt-mainnav">
+					<li><a href="" >首页</a></li>
+					<li><a href="" >个人主页</a></li>
+					<li><a href="" >账户设置</a></li>
+					<li><a href="" >消息</a></li>
+				</ul>
+				<div class="searchBar">
+					<div class="searchBtn">搜 索
+					</div>
+					<div class="searchBox">
+						<input type="text" class="searchCombox">
+					</div>
+				</div>
+			</nav>
+		</article>
+	</header>
+	<div id="content">
+		<div id="mytaobaoPanel" class="grid_c2">
+			<div class="colmain">
+				<div class="mainWrap">
+					<div id="mainContent">
+						<div id="navBar" class="tradeRemind">navBar</div>
+						<div id="searchBar">searchBar</div>
+						<div class="boughtList">
+							<form id="boughtListForm" method="post" action>
+								<table id="J_BoughtTable" class="boughtTable">
+									<colgroup>
+									  <col class="baobei">
+									  <col class="price">
+									  <col class="quantity">
+									  <col class="item-operate">
+									  <col class="amount">
+									  <col class="trade-status">
+									  <col class="trade-operate">
+									</colgroup>
+									<thead>
+									 	<tr class="colName">
+										    <th class="baobei">宝贝</th>
+										    <th class="price">单价(元)</th>
+										    <th class="quantity">数量</th>
+										    <th class="item-operate">商品操作</th>
+										    <th class="amount">实付款(元)</th>
+										    <th class="tradeStatus">
+										        <div class="tradeStatus">
+										      		<select id="J_TradeStatusHandle" class="J_NiceSelect" data-config="{&quot;w&quot;: 86, &quot;h&quot;: 15}"> 
+										      			<option selected="" value="ALL" dataMsg="交易状态">交易状态</option> 
+										      			<option value="NOT_PAID" dataMsg="等待买家付款">等待买家付款</option> 
+										      			<option value="PAID" dataMsg="买家已付款">买家已付款</option> 
+										      			<option value="SEND" dataMsg="卖家已发货">卖家已发货</option> 
+										      			<option value="SUCCESS" dataMsg="交易成功">交易成功</option> 
+										      			<option value="DROP" dataMsg="交易关闭">交易关闭</option> 
+										      			<option value="REFUNDING" dataMsg="退款中的订单">退款中的订单</option>
+										      		</select> 
+										      	</div>
+										    </th>
+										    <th class="trade-operate">交易操作</th>
+										</tr>
+										<tr class="sep-row">
+    										<td colspan="9"></td>
+    									</tr>
+    									<tr class="toolbar">
+    										<td colspan="7">
+    											<div class="operates">
+    												<label><input class="allSelector" type="checkbox">全选</label>
+    												<a href="" class="toolBtn">合并付款</a>
+    												<a href="" class="toolBtn">合并代付</a>
+    												<a href="" class="toolBtn" style="width:90px;">批量确认收货</a>
+    											</div>
+    										</td>
+    									</tr>
+									</thead>
+									<tbody dataStatus="tradeFinished" dataOrderid="765007364547013" dataIsarchive="false">
+									 	<tr class="sep-row">
+    										<td colspan="7"></td>
+    									</tr>
+    									<tr class="orderHd">
+    										<td class="first">
+    											<div class="summary">
+    												<span>
+    													<input type="checkbox" class="selector" id="cb765007364547013" value="765007364547013">
+    												</span>
+    												<span class="dealtime" title="2014-08-09 13:39">2014-08-09</span>
+    												<span class="number last-item">订单号：<em>765007364547013</em></span>
+    											</div>
+    										</td>
+    										<td class="colunm" colspan="2">
+    											<span class="g-u">
+    												<a href="">
+    													<img src="css/images/T14aUaFNJaXXaSQP_X-16-16.png">
+    												</a>
+    											</span>
+    											<a href="" class="shopName" title="显客服饰专营店">显客服饰专营店</a>
+    										</td>
+    										<td class="colunm">
+    											<span class="ww-light" data-nick="显客服饰专营店">
+    												<a href="" title="点此可以直接和卖家交流选好的宝贝，或相互交流网购体验，还支持语音视频噢。" class="ww-inline"></a>
+    											</span>
+    										</td>
+    										<td class="last" colspan="3">
+    											<div class="lastOperates">
+    												<a href="" class="share" title="分享"></a>
+    												<a href="" class="resale" title="转卖"></a>
+    												<a href="" class="delete" title="删除"></a>
+    												<a href="" class="makepoint" title="标记"></a>
+    											</div>
+    										</td>
+    									</tr>
+    									<tr id="item765007364547013" class="order-bd">
+    										<td class="baobei">
+    											<a href="" title="查看宝贝详情" class="pic">
+    												<img alt="查看宝贝详情" src="images/TB2evyyaXXXXXbJXpXXXXXXXXXX_!!292571375.jpg_80x80.jpg">
+    											</a>
+    											<div class="desc">
+    												<p class="baobei_name">
+    													<a href=""> 七匹狼钱包男士短款真皮正品 头层牛皮钱夹商务票夹休闲卡包皮夹</a>
+    													<a href="">[交易快照]</a>
+    												</p>
+    												<div class="spec">
+    													<span>颜色分类: 金属狼标啡色横款 送礼盒</span>
+    												</div>
+    												<span class="good_icons">
+    													<a href="" class="xb_return" title="七天退换"></a>
+    													<a href="" class="xb_description" title="如是描述"></a>
+    													<a href="" class="xb_aclass" title="正品保证"></a>
+    												</span>
+    											</div>
+    										</td>
+    										<td class="price" title="118.00">
+     											<em class="origin-price special-num">118.00</em><br>
+   												<i class="special-num">59.00</i>
+   											</td>
+   											<td class="quantity" title="1">
+												<i class="special-num">1</i>
+											</td>
+											<td class="item-operate">
+												<a href="">申请售后</a>
+											</td>
+											<td class="amount" rowspan="1">
+											  	<p><em class="real-price special-num">54.76</em></p>
+											  	<p>(含运费：<i class="special-num">0.00</i>)</p>
+											</td>
+											<td class="trade-status" rowspan="1">
+											  	<a href="">交易成功</a>
+											  	<a href="">订单详情</a>
+											  	<a href="">查看物流</a>
+											  	<div class="remark-status">
+												   双方已评
+												</div>
+											</td>
+											<td class="item-operate">
+												<a href="">追加评论</a>
+											</td>
+    									</tr>
+									</tbody>
+									<tbody dataStatus="tradeFinished" dataOrderid="744623765637013" dataIsarchive="false">
+									 	<tr class="sep-row">
+    										<td colspan="7"></td>
+    									</tr>
+    									<tr class="orderHd">
+    										<td class="first">
+    											<div class="summary">
+    												<span>
+    													<input type="checkbox" class="selector" id="cb744623765637013" value="744623765637013">
+    												</span>
+    												<span class="dealtime" title="2014-08-09 13:39">2014-07-24</span>
+    												<span class="number last-item">订单号：<em>765007364547013</em></span>
+    											</div>
+    										</td>
+    										<td class="colunm" colspan="2">
+    											<span class="g-u">
+    												<a href="">
+    													<img src="css/images/T14aUaFNJaXXaSQP_X-16-16.png">
+    												</a>
+    											</span>
+    											<a href="" class="shopName" title="toots零距离旗舰店">toots零距离旗舰店</a>
+    										</td>
+    										<td class="colunm">
+    											<span class="ww-light" data-nick="toots零距离旗舰店">
+    												<a href="" title="点此可以直接和卖家交流选好的宝贝，或相互交流网购体验，还支持语音视频噢。" class="ww-inline"></a>
+    											</span>
+    										</td>
+    										<td class="last" colspan="3">
+    											<div class="lastOperates">
+    												<a href="" class="share" title="分享"></a>
+    												<a href="" class="resale" title="转卖"></a>
+    												<a href="" class="delete" title="删除"></a>
+    												<a href="" class="makepoint" title="标记"></a>
+    											</div>
+    										</td>
+    									</tr>
+    									<tr id="item765007364547013" class="order-bd">
+    										<td class="baobei">
+    											<a href="" title="查看宝贝详情" class="pic">
+    												<img alt="查看宝贝详情" src="images/T1Yzu5FdRdXXXXXXXX_!!0-item_pic.jpg_80x80.jpg">
+    											</a>
+    											<div class="desc">
+    												<p class="baobei_name">
+    													<a href="">  户外吊床加厚帆布单人休闲吊床 室内宿舍摇床野营秋千 特价送绑绳</a>
+    													<a href="">[交易快照]</a>
+    												</p>
+    												<div class="spec">
+    													<span>颜色分类: 单人吊床红色条纹</span>
+    												</div>
+    												<span class="good_icons">
+    													<a href="" class="xb_return" title="七天退换"></a>
+    													<a href="" class="xb_description" title="如是描述"></a>
+    													<a href="" class="xb_quality" title="假一赔三"></a>
+    													<a href="" class="xb_aclass" title="正品保证"></a>
+    												</span>
+    											</div>
+    										</td>
+    										<td class="price" title="118.00">
+     											<em class="origin-price special-num">78.00</em><br>
+   												<i class="special-num">39.00</i>
+   											</td>
+   											<td class="quantity" title="1">
+												<i class="special-num">1</i>
+											</td>
+											<td class="item-operate">
+												<a href="">申请售后</a>
+											</td>
+											<td class="amount" rowspan="1">
+											  	<p><em class="real-price special-num">54.76</em></p>
+											  	<p>(含运费：<i class="special-num">0.00</i>)</p>
+											</td>
+											<td class="trade-status" rowspan="1">
+											  	<a href="">交易成功</a>
+											  	<a href="">订单详情</a>
+											  	<a href="">查看物流</a>
+											  	<div class="remark-status">
+												   双方已评
+												</div>
+											</td>
+											<td class="item-operate">
+												<a href="">追加评论</a>
+											</td>
+    									</tr>
+									</tbody>
+									<tbody dataStatus="tradeFinished" dataOrderid="744012647117013" dataIsarchive="false">
+									 	<tr class="sep-row">
+    										<td colspan="7"></td>
+    									</tr>
+    									<tr class="orderHd">
+    										<td class="first">
+    											<div class="summary">
+    												<span>
+    													<input type="checkbox" class="selector" id="cb744012647117013" value="744012647117013">
+    												</span>
+    												<span class="dealtime" title="2014-07-23 13:39">2014-07-23</span>
+    												<span class="number last-item">订单号：<em>744012647117013</em></span>
+    											</div>
+    										</td>
+    										<td class="colunm" colspan="2">
+    											
+    											<a href="" class="shopName" title="d[s102917354]">d[s102917354]</a>
+    										</td>
+    										<td class="colunm">
+    											<span class="ww-light" data-nick="toots零距离旗舰店">
+    												<a href="" title="点此可以直接和卖家交流选好的宝贝，或相互交流网购体验，还支持语音视频噢。" class="ww-inline ww-offline"></a>
+    											</span>
+    										</td>
+    										<td class="last" colspan="3">
+    											<div class="lastOperates">
+    												<a href="" class="share" title="分享"></a>
+    												<a href="" class="delete" title="删除"></a>
+    												<a href="" class="makepoint" title="标记"></a>
+    											</div>
+    										</td>
+    									</tr>
+    									<tr id="item744012647117013" class="order-bd">
+    										<td class="baobei">
+    											<a href="" title="查看宝贝详情" class="pic">
+    												<img alt="查看宝贝详情" src="images/T1JKvkFx0dXXXXXXXX_!!0-item_pic.jpg_80x80.jpg">
+    											</a>
+    											<div class="desc">
+    												<p class="baobei_name">
+    													<a href="">爱奇艺会员1年 奇艺会员激活码 奇异VIP 黄金套餐 充值一年</a>
+    													<a href="">[交易快照]</a>
+    												</p>
+    												<span class="good_icons">
+    													<a href="" class="xb_baozhangka" title="保障卡">
+    														<img src="css/images/T1S4ysXh8pXXXXXXXX-52-16.png">
+    													</a>
+    												</span>
+    											</div>
+    										</td>
+    										<td class="price" title="118.00">
+   												<i class="special-num">8.50</i>
+   											</td>
+   											<td class="quantity" title="1">
+												<i class="special-num">1</i>
+											</td>
+											<td class="item-operate">
+												<a href="">申请售后</a>
+												<a href="">投诉卖家</a>
+											</td>
+											<td class="amount" rowspan="1">
+											  	<p><em class="real-price special-num">8.50</em></p>
+											  	<p>(虚拟物品)</p>
+											</td>
+											<td class="trade-status" rowspan="1">
+											  	<a href="">交易成功</a>
+											  	<a href="">订单详情</a>
+											  	<a href="">查看物流</a>
+											  	<div class="remark-status">
+												   双方已评
+												</div>
+											</td>
+											<td class="item-operate">
+												<a href="">追加评论</a>
+											</td>
+    									</tr>
+									</tbody>
+									<tbody dataStatus="tradeFinished" dataOrderid="717290416637013" dataIsarchive="false">
+									 	<tr class="sep-row">
+    										<td colspan="7"></td>
+    									</tr>
+    									<tr class="orderHd">
+    										<td class="first">
+    											<div class="summary">
+    												<span>
+    													<input type="checkbox" class="selector" id="cb717290416637013" value="717290416637013">
+    												</span>
+    												<span class="dealtime" title="2014-07-02 13:39">2014-07-02</span>
+    												<span class="number last-item">订单号：<em>717290416637013</em></span>
+    											</div>
+    										</td>
+    										<td class="colunm" colspan="2">
+    											<span class="g-u">
+    												<a href="">
+    													<img src="css/images/T14aUaFNJaXXaSQP_X-16-16.png">
+    												</a>
+    											</span>
+    											<a href="" class="shopName" title="亿迪旗舰店">亿迪旗舰店</a>
+    										</td>
+    										<td class="colunm">
+    											<span class="ww-light" data-nick="toots零距离旗舰店">
+    												<a href="" title="点此可以直接和卖家交流选好的宝贝，或相互交流网购体验，还支持语音视频噢。" class="ww-inline"></a>
+    											</span>
+    										</td>
+    										<td class="last" colspan="3">
+    											<div class="lastOperates">
+    												<a href="" class="share" title="分享"></a>
+    												<a href="" class="resale" title="转卖"></a>
+    												<a href="" class="delete" title="删除"></a>
+    												<a href="" class="makepoint" title="标记"></a>
+    											</div>
+    										</td>
+    									</tr>
+    									<tr id="item765007364547013" class="order-bd">
+    										<td class="baobei">
+    											<a href="" title="查看宝贝详情" class="pic">
+    												<img alt="查看宝贝详情" src="images/T19fwGXo8fXXXXXXXX_!!0-item_pic.jpg_80x80.jpg">
+    											</a>
+    											<div class="desc">
+    												<p class="baobei_name">
+    													<a href="">情亿迪健身哑铃电镀20公斤15kg 健身器材哑铃套装 体育器材买一送三</a>
+    													<a href="">[交易快照]</a>
+    												</p>
+    												<div class="spec">
+    													<span>颜色分类: 江浙沪包快递重量: 15kg精装丝光杆</span>
+    												</div>
+    												<span class="good_icons">
+    													<a href="" class="xb_return" title="七天退换"></a>
+    													<a href="" class="xb_description" title="如是描述"></a>
+    													<a href="" class="xb_quality" title="假一赔三"></a>
+    													<a href="" class="xb_aclass" title="正品保证"></a>
+    												</span>
+    											</div>
+    										</td>
+    										<td class="price" title="118.00">
+     											<em class="origin-price special-num">168.00</em><br>
+   												<i class="special-num">159.00</i>
+   											</td>
+   											<td class="quantity" title="1">
+												<i class="special-num">1</i>
+											</td>
+											<td class="item-operate">
+												<a href="">申请售后</a>
+												<a href="">运费险失效</a>
+											</td>
+											<td class="amount" rowspan="1">
+											  	<p><em class="real-price special-num">159.00</em></p>
+											  	<p>(含运费：<i class="special-num">0.00</i>)</p>
+											</td>
+											<td class="trade-status" rowspan="1">
+											  	<a href="">交易成功</a>
+											  	<a href="">订单详情</a>
+											  	<a href="">查看物流</a>
+											  	<div class="remark-status">
+												   双方已评
+												</div>
+											</td>
+											<td class="item-operate">
+												<a href="">追加评论</a>
+											</td>
+    									</tr>
+									</tbody>
+									<tbody dataStatus="tradeFinished" dataOrderid="698759841817013" dataIsarchive="false">
+									 	<tr class="sep-row">
+    										<td colspan="7"></td>
+    									</tr>
+    									<tr class="orderHd">
+    										<td class="first">
+    											<div class="summary">
+    												<span>
+    													<input type="checkbox" class="selector" id="cb698759841817013" value="698759841817013">
+    												</span>
+    												<span class="dealtime" title="2014-06-18 13:39">2014-06-18</span>
+    												<span class="number last-item">订单号：<em>698759841817013</em></span>
+    											</div>
+    										</td>
+    										<td class="colunm" colspan="2">
+    											<span class="g-u">
+    												<a href="">
+    													<img src="css/images/T14aUaFNJaXXaSQP_X-16-16.png">
+    												</a>
+    											</span>
+    											<a href="" class="shopName" title="魅族官方旗舰店">魅族官方旗舰店</a>
+    										</td>
+    										<td class="colunm">
+    											<span class="ww-light" data-nick="魅族官方旗舰店">
+    												<a href="" title="点此可以直接和卖家交流选好的宝贝，或相互交流网购体验，还支持语音视频噢。" class="ww-inline"></a>
+    											</span>
+    										</td>
+    										<td class="last" colspan="3">
+    											<div class="lastOperates">
+    												<a href="" class="share" title="分享"></a>
+    												<a href="" class="resale" title="转卖"></a>
+    												<a href="" class="delete" title="删除"></a>
+    												<a href="" class="makepoint" title="标记"></a>
+    											</div>
+    										</td>
+    									</tr>
+    									<tr id="item765007364547013" class="order-bd">
+    										<td class="baobei">
+    											<a href="" title="查看宝贝详情" class="pic">
+    												<img alt="查看宝贝详情" src="images/T1Nh8iFsFXXXcYEPo__080048.jpg_80x80.jpg">
+    											</a>
+    											<div class="desc">
+    												<p class="baobei_name">
+    													<a href="">【魅白/银翼版】Meizu/魅族 MX3(TD) 移动版智能手机 18日0点开抢</a>
+    													<a href="">[交易快照]</a>
+    												</p>
+    												<div class="spec">
+    													<span>机身颜色: 前黑后白套餐类型: 官方标配机身内存: 16G版本类型: 中国大陆</span>
+    												</div>
+    												<span class="good_icons">
+    													<a href="" class="xb_return" title="七天退换"></a>
+    													<a href="" class="xb_description" title="如是描述"></a>
+    													<a href="" class="xb_quality" title="假一赔三"></a>
+    													<a href="" class="xb_aclass" title="正品保证"></a>
+    												</span>
+    											</div>
+    										</td>
+    										<td class="price" title="118.00">
+     											<em class="origin-price special-num">1798.00</em><br>
+   												<i class="special-num">1698.00</i>
+   											</td>
+   											<td class="quantity" title="1">
+												<i class="special-num">1</i>
+											</td>
+											<td class="item-operate">
+												<a href="">申请售后</a>
+												<a href="">运费险失效</a>
+											</td>
+											<td class="amount" rowspan="1">
+											  	<p><em class="real-price special-num">1698.00</em></p>
+											  	<p>(含运费：<i class="special-num">0.00</i>)</p>
+											</td>
+											<td class="trade-status" rowspan="1">
+											  	<a href="">交易成功</a>
+											  	<a href="">订单详情</a>
+											  	<a href="">查看物流</a>
+											  	<div class="remark-status">
+												   双方已评
+												</div>
+											</td>
+											<td class="item-operate">
+												<a href="">追加评论</a>
+											</td>
+    									</tr>
+									</tbody>
+								</table>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="colSub">colSub</div>
+		</div>
+	</div>
+</body>
+</html>
+
+	
