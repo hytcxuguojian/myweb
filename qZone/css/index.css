@@ -1,0 +1,127 @@
+*{margin: 0; padding: 0;}
+body{ width: 100%;  text-align: left; font-size: 12px; font-family:"Microsoft Yahei","Hiragino Sans GB",sans-serif;}
+img{ border: 0px; }
+a{ text-decoration: none; color: #fff;}
+ul,li{ list-style: none; list-style-position: outside; }
+
+
+/******************主要框架begin******************/
+#topnav{ width: 100%; height: 41px; background-color: #a6926c; position: fixed;  z-index: 500; top: 0; left: 0;}
+.header{ width: 100%; height: 300px; background-repeat: no-repeat; background-position: center top; background-attachment: scroll; background-image: url("images/99092_top.webp"); margin-top: 41px;}
+.mainBody{ width: 100%; min-height: 600px; height: auto; background-image: url("images/99092_bg1.png"); background-repeat: repeat;}
+/******************主要框架 end ******************/
+
+/******************导航栏 begin******************/
+#topNavInner{ width: 980px; height: 41px; margin: 0 auto; position: relative;}
+.logo{ display: block; float: left; width: 90px; height: 41px; background-image: url("images/icenter.32-jan140807095541.png"); background-position: -62px 0;}
+.topInner{ float: left; padding-left: 10px; height: 41px;}
+.navList{ float: left; position: relative;}
+.topInner a{ position: relative; display: inline-block; padding: 0 10px 0 33px; color: #fff; line-height: 40px; text-decoration: none; cursor: pointer; margin-top: 1px;}
+.navHover{ background-color: #bfab86;}
+.ui-icon{ width: 16px; height: 16px; position: absolute; left: 10px; top: 12px; display: inline-block; overflow: hidden; background-repeat: no-repeat;} 
+.icon-icenter{ background-image: url("images/102.32-jan140811165800.png"); background-position: -740px -50px;}
+.icon-homepage{ background-image: url("images/102.32-jan140811165800.png"); background-position: -740px -100px;}
+.topInner .a-link{ padding-right: 20px;}
+.drop-down-arrow{ width: 0; height: 0; font-size: 0; border-width: 3px; border-style: solid dashed dashed dashed; border-left-color: transparent; border-right-color: transparent; border-bottom-color: transparent; position: absolute; top: 19px; right: 8px;}
+.icon-friend{ background-image: url("images/102.32-jan140811165800.png"); background-position: -740px -75px;}
+.icon-application{ background-image: url("images/102.32-jan140811165800.png"); background-position: -740px -125px;}
+.icon-dress-up{ background-image: url("images/102.32-jan140811165800.png"); background-position: -740px -150px;}
+.userInfo{ float: right; line-height: 41px; padding-left: 10px; white-space: nowrap;}
+.userHome{ padding: 0 5px; text-decoration: none; height: 41px; max-width: 86px; float: left;}
+.userAvatar { width: 24px; height: 24px; margin-right: 8px; border-radius: 2px; vertical-align: top; margin-top: 9px;}
+.username{ max-width: 50px;}
+.textoverflow{ display: inline-block; white-space: nowrap; word-wrap: normal; overflow: hidden; text-overflow: ellipsis;}
+.logout-new,.user-setting,.vip-setting{ width: 26px; text-decoration: none; height: 41px; margin: 0 0 0 4px; display: inline-block; font-size: 12px; vertical-align: middle;}
+.icon-logout{ background-image: url("images/102.32-jan140811165800.png"); background-position: -765px -75px; display: block; width: 16px; height: 16px; margin: 11px 0 0 5px;}
+.tb_setting_i{ background-image: url("images/102.32-jan140811165800.png"); background-position: -765px -100px; display: block; width: 16px; height: 16px; margin: 11px 0 0 5px;}
+.icon-vip{ background-image: url("images/qzone-vip.gif"); display: block; width: 22px; height: 19px; margin: 10px 0 0 2px;}
+.top-search{ float: right; margin: 9px 0 0 5px; position: relative;}
+.search-box{ padding: 2px 0;}
+.search-input{ display: inline-block; vertical-align: top; width: 105px; height: 20px; color: #fff; border: none; outline: none; border-radius: 2px; padding: 0 25px 0 5px; background-color: rgba(255,255,255,.25);}
+.search-button { display: inline-block; vertical-align: top; width: 24px; height: 20px; position: absolute; right: 0; top: 2px;}
+.icon-search{ cursor: pointer; margin: 2px 0 0 5px; width: 16px; height: 16px; background-image: url("images/102.32-jan140811165800.png"); background-position: -765px -150px; display: block;}
+.music-container{ float: right; width: 50px; padding: 10px; margin-top: 1px; position: relative;}
+.music-panel{ -webkit-border-radius: 1px; height: 20px; width: 50px;}
+.musicPlay{ float: left; width: 22px; height: 20px; text-align: center; background-color: #bfab86; margin-right: 1px; -webkit-border-top-left-radius: 1px; -webkit-border-bottom-left-radius: 1px; -moz-border-radius-topleft: 1px; -moz-border-radius-bottomleft: 1px; border-top-left-radius: 1px; border-bottom-left-radius: 1px;}
+.ico-music-play{ width: 16px; height: 16px; margin-top: 2px; margin-left: 3px; background-image: url("images/102.32-jan140811165800.png"); background-position: -765px -25px; display: block;}
+.musicdynamic{ float: left; width: 27px; height: 20px; text-align: center; background-color: #bfab86; cursor: pointer; -webkit-border-top-right-radius: 1px; -webkit-border-bottom-right-radius: 1px; -moz-border-radius-topright: 1px; -moz-border-radius-bottomright: 1px;  border-top-right-radius: 1px; border-bottom-right-radius: 1px;}
+.ico-music-dynamic{ margin-top: -1px; margin-left:6px; width: 16px; height: 16px; background-image: url("images/102.32-jan140811165800.png"); background-position: -765px -50px; display: block;}
+/******************导航栏 end******************/
+
+/***************header bedin*****************/
+.headerTop{ width: 980px; height: 250px; margin: 0 auto; position: relative;}
+.headerBottom{ width: 100%; height: 50px; background-image: url("images/99092_menu_bg.png");}
+.menu{ width: 980px; height: 50px; margin: 0 auto; position: relative;}
+.headAvatar{ position: absolute; bottom: 20px; left: 0; display: block; width: 120px; height: 120px; background-image: url("images/100.jpg"); background-size: 120px 120px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: #ffffff 4px solid;}
+.menu ul{ width: 600px; height: 50px; padding-left: 175px;}
+.menuli{ height: 40px; line-height: 40px; padding-top: 10px; width: auto; text-align: left; float: left;}
+.menuli a{ display: inline; line-height: 40px; font-size: 15px; font-weight: bold; color: #000; text-shadow: 1px 1px 1px rgba(0,0,0,.5); padding-top: 10px; padding-right: 20px}
+.menuli a:hover{ color: #333;}
+.headInfo{ position: absolute; top: 20px; left: 0;}
+.headInfo h1{ font-size: 28px; font-weight: normal; margin-bottom: 3px; display: block;}
+.titleText{ margin-right: 5px;  color: #fff;}
+.qzlevel{ display: inline-block; width: 24px; height: 36px; }
+.headDesc{ font-size: 14px; display: block;}
+.sescText{ color: #fff;}
+.guajian{ position: absolute; top: 30px; right: 0; width: 200px; height: 56px;}
+.weather{ position: absolute; width: 180px; color: #fff; text-shadow: 1px 1px 1px rgba(0,0,0,.2); z-index: 150; font-size: 12px; padding-right: 20px;}
+.otherInfo{ float: right; width: 45px; height: 48px; position: relative;}
+.weatherCity{ display: block; margin-top: 9px; font-size: 14px; margin-bottom: 1px; position: relative;}
+.weatherDate{ display: block; font-size: 12px; }
+.temperature{ font-size: 38px; height: 56px; line-height: 56px; float: right;}
+.weatherIcon{ width: 56px; height: 56px; float: right; background-size: 56px 56px; background-image: url("images/weather-cloudy-sunny.png");}
+.headName{ position: absolute; bottom: 20px; left: 165px;}
+.user-name{ font-size: 20px; max-width: 200px; color: #fff; vertical-align: middle; display: inline-block; margin-right: 10px;}
+.user-vip-info{ position: relative; top: -2px; font-size: 0; vertical-align: middle; display: inline-block; margin-right: 10px;}
+.zuanshi{ vertical-align: bottom; display: inline-block; width: 23px; height: 26px; margin-right: 2px; background-image: url("images/qz_vip_icon_l_gray_0.png");}
+.zanshiOpen{ vertical-align: bottom;display: inline-block;width: 55px; height: 16px; position: relative; top: -1px; background-image: url("images/icon-vip-open.gif");}
+.likeBtnPanel{ position: absolute; right: 4px; bottom: 18px; z-index: 20;}
+.likeBtn{ position: relative; display: inline-block; margin-left: 9px; vertical-align: top; border-color: rgba(0,0,0,.5); border-style: solid; border-width: 1px; border-radius: 3px; width: 138px; height: 32px; background-image: url("images/btn-x.png"); background-repeat: repeat-x; text-shadow: 0 -1px rgba(0,0,0,.8);}
+.likeBtnLeft{ padding-left: 14px; padding-right: 10px; display: inline-block; vertical-align: top; height: 32px;}
+.sp-btn-like{ display: inline-block; margin-top: 6px; margin-right: 5px; vertical-align: top; width: 20px; height: 20px; background-image: url("images/icenter.32-jan140807095541.png"); background-position: -130px -42px;}
+.txt{ margin-top: 9px; display: inline-block; height: 16px; vertical-align: top;}
+.sp-btn-split{ display: inline-block; width: 2px; height: 32px; background-image: url("images/icenter-jan140807095541.png"); background-position: -291px -35px;}
+.likeBtnRight{ padding-right: 14px; padding-left: 10px; display: inline-block; vertical-align: top; height: 32px;}
+
+/******************主页面 begin******************/
+.mainContent{ width: 980px; height: auto; padding-top: 20px; margin: 0 auto;}
+.clearfixed:after{ content: ""; clear:both; display: block;}
+/******左侧 begin*****/
+.contentLeft{ width: 170px; float: left; height: 300px;}
+.contentLeft-menu{ width: 168px; color: #403e3b; background-color: #f8f6f2; border: 1px #d4cebe solid; margin-bottom: 12px; border-radius: 3px;}
+.sn_list{ width: 168px; padding: 2px 0; position: relative;}
+.tab_menu_li{ width: 100%; height: 36px; margin: 1px 0; position: relative;}
+.tab_menu_li a{ display: block; color: #403e3b; padding: 8px 0; width: 162px; height: 20px; margin: 0 3px;}
+.tab_menu_li a:hover{ background-color: #e6e1d3;}
+.qz-left{ padding-left: 14px; float: left; width: 16px; height: 16px; margin-right: 10px; }
+.qz-left-icon{ width: 16px; height: 16px; display: block; vertical-align: top; background-image: url("images/102.32-jan140811165800.png"); }
+.haoyoudongtai{ background-position: -815px -75px;}
+.qz-main{ width: 80px; height: 20px; float: left; overflow: hidden;}
+.qz-right{ height: 20px; margin-left: 5px; margin-right: 10px;}
+.sn-title{ font-weight: bold;}
+.tebieguanxin{ background-position: -340px -50px;}
+.yuwoxiangguan{ background-position: -465px -100px;}
+.nanianjinri{ background-position: -415px -25px;}
+.tengxunweibo{ background-position: -840px -75px;}
+.qqyanchu{ background-position: -890px -50px;}
+.wodeshoucang{ background-position: -865px -125px;}
+.shimingpengyou{ background-position: -815px -125px;}
+.renzhengkongjian{ background-position: -815px -175px;}
+.yingyingzhongxin{ background-position: -840px -175px;}
+.chihewanle{ background-position: -890px 0;}
+.aiguangpindao{ background-position: -840px -125px;}
+#tab_hide_list{ display: none;}
+.tabSwitch{ width: 168px; height: 20px; display: block; background-color: #eeebe2; border-top: 1px solid #e0dbd1; padding: 1px 0;}
+.sp-nav-l-down{ display: block; width: 16px; height: 16px; background-image: url("images/102.32-jan140811165800.png"); background-position: -890px -150px; margin-left: 76px; margin-top: 2px;}
+
+.songCF{ background-position: -304px -0;}
+/******左侧 end*****/
+
+/******中间 begin*****/
+.contentCenter{ width: 534px; margin-left: 23px; float: left; height: 300px; background-color: #ccc;}
+/******中间 end*****/
+
+/******右侧 begin*****/
+.contentRight{ width: 230px; float: right; height: 300px; background-color: #ccc;}
+/******右侧 end*****/
+
