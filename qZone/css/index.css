@@ -143,7 +143,7 @@ ul,li{ list-style: none; list-style-position: outside; }
 
 /******中间 begin*****/
 /*发表说说区*/
-.contentCenter{ width: 534px; margin-left: 23px; float: left; height: 300px;}
+.contentCenter{ width: 534px; margin-left: 23px; float: left; height: auto;}
 .postSection{ display: block; width: 534px; height: auto; background-color: #fff; margin-bottom: 12px;}
 .editor{ width: 534px; height: 70px;}
 .qz-input{ width: 385px; height: 68px; border:1px solid #d4cebe; float: left; overflow: hidden;}
@@ -161,12 +161,12 @@ ul,li{ list-style: none; list-style-position: outside; }
 .postfooter{ display: none; position: relative; width: 532px; height: 38px; border:1px solid #d4cebe; border-top: 0; background-color: #fff;}
 .addons{ height: 16px; display: block; position: absolute; top:12px; left: 10px; }
 .postfooter_link{ display: block; width: 16px; height: 16px; margin-right: 10px; float: left; background-image: url("images/102.32-jan140811165800.png");}
-#expression{ background-position: -340px 0;}
-#remind{ background-position: -465px -100px;}
-#talk{ background-position: -465px -150px;}
-#expression:hover{ background-position: -465px -75px;}
-#remind:hover{ background-position: -465px -125px;}
-#talk:hover{ background-position: -665px -175px;}
+.expression{ background-position: -340px 0;}
+.remind{ background-position: -465px -100px;}
+.talk{ background-position: -465px -150px;}
+.expression:hover{ background-position: -465px -75px;}
+.remind:hover{ background-position: -465px -125px;}
+.talk:hover{ background-position: -465px -175px;}
 .postSync{ height: 16px; display: block;  position: absolute; top: 12px; right: 87px; }
 #SyncQQ{ background-position: -690px -75px;}
 #SyncWeibo{ background-position: -665px -175px;}
@@ -177,8 +177,9 @@ ul,li{ list-style: none; list-style-position: outside; }
 .visiblelevel{ display: inline-block; height: 16px; line-height: 16px; overflow: hidden; margin-right: 10px;}
 .text-place{ display: inline-block; color: #99958d; float: left; margin-right: 5px; text-align: center;}
 .privateDrop{ display: inline-block; width: 10px; height: 10px; overflow: hidden;  background-image: url("images/102.32-jan140811165800.png"); background-position: -390px -150px;}
-.fabiao{ position: absolute; top: 5px; right: 10px; width: 55px; height: 28px; padding: 0 10px; line-height: 28px; color: #fff; font-size: 14px; text-align: center; border-radius: 2px; border:1px solid rgb(158, 140, 95); background-color: rgb(179, 165, 125);}
+.fabiao{ position: absolute; top: 5px; right: 10px; width: 55px; height: 28px; cursor: pointer; padding: 0 10px; line-height: 28px; color: #fff; font-size: 14px; text-align: center; border-radius: 2px; border:1px solid rgb(158, 140, 95); background-color: rgb(179, 165, 125);}
 .fabiao:hover{ background-color: #bfb086;}
+
 /*那年今日*/
 .contentCenter-menu{ display: block; width: 532px; height: auto; color: #8c8262; background-color: #f8f6f2; border: 1px #d4cebe solid; margin-bottom: 12px; border-radius: 3px;}
 .past_years{ width: 487px; height: 30px; padding: 12px 35px 12px 10px; position: relative; }
@@ -188,25 +189,76 @@ ul,li{ list-style: none; list-style-position: outside; }
 .info-txt{ display: inline-block; float: left; line-height: 30px; color: #99958d; margin-right: 8px; cursor: pointer;}
 .info-txt-more{ display: block; width: 16px; height: 30px; position: absolute; top: 19px; right: 20px; background-image: url("images/102.32-jan140811165800.png"); background-position: -940px -50px;}
 /*全部动态*/
-.allNews{ width: 534px; height: auto;}
+.allNews{ width: 534px; height: auto; color: #8c8262; display: block;}
 .allNewstitle{ width: 532px; height: 42px; border:1px solid #d4cebe; border-top-left-radius: 3px;  border-top-right-radius: 3px; background-color: #eeebe2;}
 .item-on-slt{ display: block; width: 80px; height: 24px; padding: 14px 15px; float: left;}
 #feed_hover_text{ color: #403e3b; font-weight: 700; display: inline-block;}
 .icon-feed-down{ width: 10px; height: 10px; display: inline-block; margin-left: 10px; margin-top: 7px; background-image: url("images/102.32-jan140811165800.png"); background-position: -390px -150px;}
 .allNewsContent{ width: 534px; height: auto;}
-.news{ display: block; width: 532px; height: auto; color: #8c8262; background-color: #f8f6f2; border: 1px #d4cebe solid; margin-bottom: 12px; border-radius: 3px;}
+.news{ display: block; width: 532px; height: auto; color: rgb(64, 62, 59); background-color: #f8f6f2; border: 1px #d4cebe solid; margin-bottom: 12px; border-radius: 3px;}
 .newsHeader{ width: 450px; height: 50px; margin-bottom: 12px; padding: 15px 10px 0 72px; position: relative;}
-.authorheadImage{ display: block; width: 50px; height: 50px; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; position: absolute; top: 15px; left: 10px; background-size: 50px 50px; background-image: url("../images/fengxiaojie50X50.png");}
+.authorheadImage{ display: block; width: 50px; height: 50px; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; position: absolute; top: 15px; left: 10px; background-size: 50px 50px; background-image: url("../images/zhaowen50X50.jpg");}
 .authorInfo{ width: 450px; height: 47px; }
 .authorNick{ width: 360px; height: 22px; margin-bottom: 8px; white-space: nowrap; word-wrap: normal; overflow: hidden; text-overflow: ellipsis; font-size: 14px; line-height: 22px;}
 .authorNick a{ color: #403e3b;}
 .authorNick a:hover{ text-decoration: underline;}
 .infoDetail{ width: 450px; height: 17px; }
-
-
-
-
-
+.timeState{ display: inline-block; margin-right: 10px; color: #99958d;}
+.visitor{ display: inline-block; margin-right: 10px; color: #99958d;}
+.icon-browse{ width: 16px; height: 16px; margin-right: 5px; display: inline-block; vertical-align: bottom; background-image: url("images/102.32-jan140811165800.png"); background-position: -390px -175px;}
+.qz-level{ margin-right: 5px; }
+.qzone_lv{ display: inline-block; width: 16px; height: 16px; margin-right: 10px; position: relative;}
+.qzone_lv3{ background-image: url("images/qz_qzone_lv-jan140807095541.png"); background-position: -34px 0;}
+.number{ position: absolute; left: 10px; bottom: 0; width: 21px; line-height: 7px; height: 7px;}
+.number b{ display: inline-block; width: 8px; height: 7px; float: left; background-repeat: no-repeat; margin-right: -1px; vertical-align: top;}
+.d4{ background-image: url("images/qz_qzone_lv-jan140807095541.png"); background-position: -170px 0;}
+.d5{ background-image: url("images/qz_qzone_lv-jan140807095541.png"); background-position: -187px 0;}
+.d8{ background-image: url("images/qz_qzone_lv-jan140807095541.png"); background-position: -238px 0;}
+.newsInfo{ font-size: 14px; color: rgb(64, 62, 59); padding: 0 10px 8px 10px; margin-top: -5px; _margin-top: 0; font-weight: normal; line-height: 22px;}
+.newsInfo:after{ content: "."; display: block; height: 0; line-height: 0; overflow: hidden; clear: both;}
+.news_op_wrap{ width: 532px; height: auto; background-color: #eeebe2;}
+.newsDetail{ width: 512px; height: 28px; padding: 5px 10px; border-top: 1px solid rgb(224, 219, 209); }
+.newsDetailItem{ position: relative; height: 16px; line-height: 16px; border-color: #eeebe2; cursor: pointer; display: inline-block; float: left; padding: 6px 8px; margin: 0 8px 0 0; color: #8c8262; }
+.newsDetailItem:hover{ border-color: #d4cebe; background-color: #f8f6f2;}
+.newsDetailItem i{ float: left; display: inline-block; width: 16px; height: 16px; margin-right: 7px;}
+.icon-comment{ background-image: url("images/102.32-jan140811165800.png"); background-position: -390px -25px;}
+.item-line{display: inline-block; float: left; width: 0px; height: 12px;  border-right: 1px solid #e0dbd1; margin: 8px 9px 0 0px;}
+.icon-forwarding{ background-image: url("images/102.32-jan140811165800.png"); background-position: -390px -50px;}
+.icon-zan{ background-image: url("images/102.32-jan140811165800.png"); background-position: -365px -150px;}
+.likeSpan,.likeCountSpan{ float: left;}
+.icon-collect{ background-image: url("images/102.32-jan140811165800.png"); background-position: -390px -100px;}
+.icon-more{ background-image: url("images/102.32-jan140811165800.png"); background-position: -390px 0;}
+.more_OP_list{ display: none; width: 44px; height: auto; padding: 4px; background-color: #f8f6f2; border:1px solid #e2e2e2; position: absolute; left: -5px; top: 28px; z-index: 50;}
+.hidenSpan,.reportSpan{ width: 24px; height: 15px; padding: 4px 10px 3px 10px; display: block; cursor: pointer; color: #403e3b;}
+.hidenSpan:hover,.reportSpan:hover{ background-color: #e6e1d3; }
+.spilidSpan{ display: block; width: 40px; height: 1px;  border-top: 1px solid #e0dbd1; margin: 0 auto;}
+.newsLikeInfo{ width: 522px; height: 40px; padding-left: 10px; margin-bottom: 2px;}
+.newslikeBtn{ width: 29px; height: 29px; float: left; margin-right: 10px; background-color: #f8f6f2; border:1px solid #d4cebe; cursor: pointer;}
+.newslikeBtn:hover{ background-color: #eeebe2;}
+.newsLikeIcon{ display: block; width: 16px; height: 16px; margin: 7px auto;  background-image: url("images/102.32-jan140811165800.png"); background-position: -365px -150px;}
+.newsLikeList{  min-width: 40px; max-width: 480px; height: 30px; float: left; overflow: hidden;}
+.Comments{ width: 512px; height: auto; padding: 0 10px 12px 10px; }
+.CommentsList{ height: auto; display: block; overflow: hidden;}
+.Comment_item{ height: auto; margin-bottom: 4px;}
+.Comment_item_bd{ padding: 0 0 0 40px; position: relative; }
+.ui_avatar{ position: absolute; left: 0; top:0; width: 30px; height: 30px; display: block;}
+.ui_avatar img{ width: 30px; height: 30px;}
+.comments_content{ position: relative; line-height: 1.5; top: -3px;}
+.c_tx{ color: #8c8262; }
+.q_namecard{ text-align: left; line-height: 18px;}
+.q_namecard:hover{ text-decoration: underline;}
+.comment_op{ line-height: 18px; position: relative;}
+.act_reply{ width: 16px; height: 16px; display: inline-block; cursor: pointer; margin-right: 10px; background-repeat: no-repeat; vertical-align: -3px; background-image: url("images/102.32-jan140811165800.png"); background-position: -415px -150px;}
+.comment_sub{ padding-top: 4px; height: auto; display: block;}
+.comment_poster{ display: block; position: relative;}
+.textInput{ display: block; width: 440px; height: 60px; float: left; border: 1px #d4cebe solid; font-family: "Microsoft YaHei"; padding: 2px 3px 2px 10px; line-height: 20px; overflow: auto; font-size: 14px; color: #403e3b; outline: none;}
+.addPhoto{ width: 56px; height:64px; float: right; background-color: #fff; border: 1px #d4cebe solid; border-left: 0;}
+.icon-addPhoto{ width: 16px; height: 16px; display: block; margin: 24px auto 0 auto; background-image: url("images/102.32-jan140811165800.png"); background-position: -640px 0;}
+.comment_postfooter{display: none; position: relative; height: 38px; width: 512px; border:0; padding: 0; background-color: #eeebe2;}
+.privateComment{ height: 16px; display: block; position: absolute; top: 12px; right: 100px;}
+.evt_click{ width: 16px; height: 16px; float: left;}
+.spanforcheckbox{ display: inline-block; float: left; padding: 0 5px;}
+.picforcheckbox{ width: 16px; height: 16px; display: block; float: left; background-image: url("images/photo-scan-layer.32-wei140819103108.png"); background-position: -296px -17px;}
 /******中间 end*****/
 
 /******右侧 begin*****/
@@ -254,3 +306,5 @@ ul,li{ list-style: none; list-style-position: outside; }
 .op_pre:hover,.op_next:hover{ background-color: #eeebe2;}
 /******右侧 end*****/
 
+.clearfixed:after{ content: ""; display: block; clear: both;}
+.myheadImage{ background-image: url("images/100.jpg");}
