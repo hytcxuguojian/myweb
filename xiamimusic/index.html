@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>虾米音乐</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="虾米音乐">
+	<meta name="description" content="虾米音乐">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-2.0.3.js"></script> 
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div id="player-main">
+		<div id="Top">
+			<div id="head">
+				<div class="logo">
+					<h1><a target="_blank"></a></h1>
+				</div>
+				<div class="searchBar">
+					<div class="searchIconContainer">
+						<span class="searchIcon"></span>
+					</div>
+					<input id="searchInput" type="text">
+				</div>
+				<div class="mainNav">
+					<div class="tipLogin">
+						马上
+						<a href="#" class="loginA">登录</a>
+					</div>
+					<a href="#" class="myroom"></a>
+				</div>
+			</div>
+		</div>
+		<div id="middle">
+			<div class="main-wrap">
+				<div class="main-sidebar">
+					<div class="menu-outer">
+						<ul id="J_sidebarMenu">
+							<li class="menuLi cur">
+								<a href="#">
+									<i class="icon iplay"></i>
+									正在播放
+								</a>
+							</li>
+							<li class="menuLi">
+								<a href="#">
+									<i class="icon ihst"></i>
+									播放历史
+								</a>
+							</li>
+							<li class="menuLi">
+								<a href="#">
+									<i class="icon ishouc"></i>
+									我收藏的单曲
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="collectOut">
+						<span class="colS">我创建的精选集</span>
+						<a href="#" class="colA"></a>
+					</div>
+					<div class="cellectList"></div>
+					
+				</div>
+				<div class="mainbody">
+					<div class="playList">
+						<ul class="playListhead">
+							<li class="playListheadli c1">歌曲
+								<span>(10)</span>
+							</li>
+							<li class="playListheadli c2">演唱者
+							</li>
+							<li class="playListheadli c3">专辑
+							</li>
+						</ul>
+						<ul class="playListContent">
+							<li class="playListContentli">
+								<div class="playListItem">
+									<div class="playListCheckbox">
+										<input class="checkIn" type="checkbox" select="0">
+									</div>
+									<div class="songSort" >
+										<em sonN="1">1</em>
+									</div>
+									<div class="songInfo">
+										<div class="songItem c1"><span class="songName" title="盛夏光年">盛夏光年</span></div>
+										<div class="songItem c2"><a class="songer" href="">陈冰</a></div>
+										<div class="songItem c3"><a class="album" href="">好声音第三季</a></div>
+									</div>
+									<div class="control">
+										<a class="cicon love"></a>
+										<a class="cicon more"></a>
+										<a class="cicon dele"></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="playFt">
+							<div class="track">
+								<div class="uiCheck">
+									<input class="checkAll" type="checkbox" select="0">
+								</div>
+								<div class="uiItem">
+									<a href="#" class="itIcon itDele">删除</a>
+								</div>
+								<div class="uiItem">
+									<a href="#" class="itIcon itShou">收藏</a>
+								</div>
+								<div class="uiItem">
+									<a href="#" class="itIcon itJin">添加到精选集</a>
+								</div>
+								<div class="uiItem">
+									<a href="#" class="itIcon itMore">更多</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<audio id="audio" src="musics/1.mp3" controls="controls" loop="loop"></audio>
+		</div>
+	</div>
+</body>
+</html>
